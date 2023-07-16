@@ -15,7 +15,3 @@ const render = () => {
 store.subscribe(render); // Re-render on state changes.
 
 render(); // Initial render.
-
-document.getElementById('plusButton').addEventListener('click', () => {
-  store.dispatch({ type: 'increment' });
-});
